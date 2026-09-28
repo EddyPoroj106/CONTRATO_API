@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Estudiante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">Universidad</div>
+      <nav>
+        <button class="nav-item active">Inicio</button>
+        <button class="nav-item">Cursos</button>
+        <button class="nav-item">Tareas</button>
+        <button class="nav-item">Evaluaciones</button>
+        <button class="nav-item">Archivos</button>
+        <button class="nav-item">Calendario</button>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <div>
+          <h1>Hola, estudiante 👋</h1>
+          <p>Esto es lo que necesitas atender.</p>
+        </div>
+        <div class="profile">ES</div>
+      </header>
+
+      <section class="summary">
+        <div class="card">
+          <span>Tareas pendientes</span>
+          <strong id="pendingCount">0</strong>
+        </div>
+        <div class="card">
+          <span>Próxima entrega</span>
+          <strong id="nextDue">—</strong>
+        </div>
+        <div class="card">
+          <span>Completadas</span>
+          <strong id="completedCount">0</strong>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Lo que debes atender</h2>
+            <p>Prioriza tus tareas pendientes.</p>
+          </div>
+          <select id="filter">
+            <option value="">Todas</option>
+            <option value="pendiente">Pendientes</option>
+            <option value="completada">Completadas</option>
+          </select>
+        </div>
+
+        <div id="message" class="message"></div>
+        <div id="tasks" class="tasks"></div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
