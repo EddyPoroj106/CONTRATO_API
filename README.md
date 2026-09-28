@@ -20,7 +20,7 @@ Estados permitidos:
 - `pendiente`
 - `completada`
 
-### Ejemplo de tarea
+### Ejemplo de JSON 
 
 ```json
 {
